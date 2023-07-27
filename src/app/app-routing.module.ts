@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { CharSheetsComponent } from './char-sheets/char-sheets.component';
+
+const routes: Routes = [
+  {path: "char-sheet", component: CharSheetsComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
